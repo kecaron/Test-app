@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Test-app</string>
+    <string-array name="theme_array">
+        <item>abstract</item>
+        <item>animals</item>
+        <item>business</item>
+        <item>cats</item>
+        <item>city</item>
+        <item>food</item>
+        <item>nightlife</item>
+        <item>fashion</item>
+        <item>people</item>
+        <item>nature</item>
+        <item>sports</item>
+        <item>technics</item>
+        <item>transport</item>
+    </string-array>
+</resources>

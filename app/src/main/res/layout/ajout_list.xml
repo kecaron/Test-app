@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/x_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="Taille X :"
+            android:layout_below="@+id/spinner"
+            android:layout_alignStart="@+id/add_theme" />
+
+        <TextView
+            android:id="@+id/add_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:text="Votre Theme :"
+            android:layout_marginEnd="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/smain" />
+
+        <EditText
+            android:id="@+id/eddit_x"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/x_add"
+            android:layout_alignBottom="@+id/x_add"
+            android:layout_alignStart="@+id/spinner"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/eddit_y"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/y_add"
+            android:layout_alignBottom="@+id/y_add"
+            android:layout_alignStart="@+id/eddit_x"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/y_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/x_add"
+            android:layout_below="@+id/x_add"
+            android:layout_marginTop="71dp"
+            android:text="Taille Y :" />
+
+        <Button
+            android:id="@+id/smain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eddit_y"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="78dp"
+            android:text="Send" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/add_theme"
+            android:layout_toEndOf="@+id/add_theme" />
+
+    </RelativeLayout>
+</LinearLayout>
